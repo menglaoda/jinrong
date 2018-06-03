@@ -1,0 +1,26 @@
+.login .btn2{
+	width: 80%;
+}
+.signupDone{
+	width: 200px;
+	display: none;
+	padding: 20px 0px;
+	border-radius: 6px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -100px 0px 0px -100px;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: white;
+	text-align: center;
+}
+.signupDone p{
+	font-size: 30px;
+}
+.signupDone span{
+	font-size: 14px;
+}
+.signupDone strong{
+	color: rgba(30,144,255,0.9);
+	padding: 0px 2px;
+}

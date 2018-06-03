@@ -1,0 +1,119 @@
+.pp{
+	font-size: 40px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
+.information{
+	height: 100vh;
+	min-height: 666px;
+	display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+	display: -moz-box; /* 老版本语法: Firefox (buggy) */ 
+	display: -ms-flexbox; /* 混合版本语法: IE 10 */
+	display:-webkit-flex; /* 新版本语法： Chrome 21+ */
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+    justify-content:center;
+	-webkit-box-align: center; 
+	-moz-box-align: center;
+	/*混合版本语法*/
+    -ms-flex-align: center; 
+	/*新版本语法*/
+	-webkit-align-items: baseline;
+	align-items: baseline;
+	
+	/*水平居中*/
+	/*老版本语法*/
+	-webkit-box-pack: center; 
+	-moz-box-pack: center; 
+	/*混合版本语法*/
+	-ms-flex-pack: center; 
+	align-items:center;
+}
+.information li{
+	width: 140px;
+	list-style: none;
+	flex: 1;
+	padding:0px 10px ;
+	text-align: center;
+	-webkit-transition: padding-top 1s;
+	transition: padding-top 1s;
+}
+.information li:hover{
+	padding-top: 10px;
+}
+.information div{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background: white;
+	border: solid 2px #0086B3;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 100px;
+}
+.information i{
+	font-size: 40px;
+	color: #0086B3;
+}
+.information img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-top: 25px;
+}
+.information h3{	
+	font-weight: 100;
+	color: rgba(0,0,0,0.8);
+}
+.information p{
+	font-size: 16px;
+	color: #666;
+}
+.information .jinr:hover{
+	color: red;
+	text-decoration: underline;
+}
+@media all and (max-width:2000px ) {	
+	.pp{
+		top: 100px;
+	}
+	.jinchanpin{
+		width: 600px;
+		display: block;
+		margin:0px auto;
+		margin-top: 120px;
+	}
+	.jinchanpin li{
+		width: 200px ;
+		float: left;
+		margin-top: 20px;
+	}
+	.jinchanpin li:hover{
+		padding-top: 0px;
+	}
+}
+@media all and (max-width:421px ) {
+    body{
+    	overflow-y: visible;
+    }
+	.pp{
+		top: 25px;
+	}
+	.information{
+		width: 100%;
+		display: block;
+		margin: 40px auto;
+	}
+	.information li{
+		width: 50%;
+		float: left;
+		margin-top: 20px;
+	}
+	.information li:hover{
+		padding-top: 0px;
+	}
+}

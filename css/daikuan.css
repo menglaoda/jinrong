@@ -1,0 +1,15 @@
+.daikuan{
+	width: 300px;
+	height: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+.daikuan img{
+	width: 300px;
+}
+.daikuan h1{
+	color: blue;
+}
+.daikuan li{
+	list-style: none;
+}

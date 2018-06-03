@@ -1,0 +1,59 @@
+body{
+	overflow-y: visible;
+	}
+.tab{
+	width: 60%;
+	margin:  0 auto;
+	background: rgba(247, 247, 247, 0.5);
+	border-collapse: collapse;
+	position: relative;
+	top: 80px;
+	color: rgba(0,0,0,0.8);
+}
+@media all and (max-height: 630px) {
+	body{
+		overflow: visible;
+	}
+}
+@media all and (max-width: 1040px) {
+	body{
+		overflow: visible;
+	}
+	.tab{
+		width: 100%;
+		background: rgba(247, 247, 247, 0.5);
+		border-collapse: collapse;
+		position: relative;
+		top: 0px;
+		color: rgba(0,0,0,0.8);
+    }
+}
+@media all and (max-width: 600px) {
+	.tab{
+		font-size: 14px;
+    }
+}
+.tab tr:nth-child(2n+1){
+	background: rgba(239,239,239,0.7);
+}
+.tab tr:nth-child(1){
+	background: rgba(83,182,216,0.7);
+}
+.tab tr:nth-child(2){
+	background: rgba(137,224,254,0.7);
+}
+.tab tr:nth-child(2) td,.tab tr:nth-child(1) td{
+	padding: 6px 0px;
+}
+.tab td{
+	padding: 2px 0px;
+	text-align: center;	
+}
+.tab_btn tr:nth-child(n+3) td:last-child{
+	color: blue;
+	cursor: pointer;
+}
+.tab_btn tr:nth-child(n+3) td:last-child:hover{
+	color: red;
+	text-decoration: underline;
+}
